@@ -47,7 +47,7 @@ let make = (~slug, ~eventSlug) => {
     {({result}) =>
        switch (result) {
        | Loading => <div> {React.string("Loading")} </div>
-       | Error(error) => <div> {React.string(error##message)} </div>
+       | Error(error) => <div> {React.string(error.message)} </div>
        | Data(response) =>
          let project = projectFromJs(response##projectBySlugAndEvent);
          let contributors = response##projectBySlugAndEvent##contributors |> Array.map(user => userFromJs(user));

@@ -9,7 +9,8 @@ module Styles = {
       maxWidth(px(400)),
       backgroundColor(white),
       borderRadius(px(25)),
-      boxShadow(rgba(0, 0, 0, 0.75), ~x=px(7), ~y=px(-1), ~blur=px(33), ~spread=px(-15)),
+      // boxShadow(Shadow.box(~y=px(3), ~blur=px(5), rgba(0, 0, 0, 0.3))),
+      boxShadow(Shadow.box(rgba(0, 0, 0, 0.75), ~x=px(7), ~y=px(-1), ~blur=px(33), ~spread=px(-15)))
     ]);
 };
 

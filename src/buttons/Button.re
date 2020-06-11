@@ -13,7 +13,7 @@ module Styles = {
       fontSize(rem(1.1)),
       fontWeight(bold),
       borderColor(transparent),
-      fontFamily(Theme.sansSerif),
+      fontFamily(`sansSerif),
       ...buttonTheme,
     ]);
   };

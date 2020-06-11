@@ -19,7 +19,7 @@ module Styles = {
       fontSize(rem(1.1)),
       fontWeight(bold),
       backgroundColor(white),
-      fontFamily(Theme.sansSerif),
+      fontFamily(`sansSerif),
     ]);
   let buttonText =
     style([

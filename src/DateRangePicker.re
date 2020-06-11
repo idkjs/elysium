@@ -1,7 +1,7 @@
 open MomentRe;
 type dates = {
-  startDate: Moment.t,
-  endDate: Moment.t,
+  startDate: MomentRe.Moment.t,
+  endDate: MomentRe.Moment.t,
 };
 type onDatesChangeType = dates => unit;
 

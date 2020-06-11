@@ -56,7 +56,7 @@ let make = (~slug) => {
     ...{({result}) =>
       switch (result) {
       | Loading => <div> {React.string("Loading")} </div>
-      | Error(error) => <div> <h2> {React.string(error##message)} </h2> </div>
+      | Error(error) => <div> <h2> {React.string(error.message)} </h2> </div>
       | Data(response) =>
         let event = response##eventBySlug;
         let projects = response##eventBySlug##projects |> Array.map(project => projectFromJs(project));

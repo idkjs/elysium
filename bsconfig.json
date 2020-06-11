@@ -1,7 +1,3 @@
-/* This is the BuckleScript configuration file. Note that this is a comment;
-  BuckleScript comes with a JSON parser that supports comments and trailing
-  comma. If this screws with your editor highlighting, please tell us by filing
-  an issue! */
 {
   "name": "elysium",
   "reason": {
@@ -20,14 +16,16 @@
   "bs-dependencies": [
     "reason-react",
     "bs-css",
+    "bs-css-emotion",
     "reason-apollo",
-    "bs-reform",
     "bs-webapi",
+    "reschema",
+    "reason-react-update",
     "bs-axios",
     "bs-moment"
   ],
   "ppx-flags": [
-    "graphql_ppx/ppx",
+    "@baransu/graphql_ppx_re/ppx",
     "lenses-ppx/ppx"
   ],
   "refmt": 3

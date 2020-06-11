@@ -1,5 +1,4 @@
 open MomentRe;
-
 module StateLenses = [%lenses
   type state = {
     name: string,
@@ -10,7 +9,7 @@ module StateLenses = [%lenses
   }
 ];
 
-module CreateEventForm = ReFormNext.Make(StateLenses);
+module CreateEventForm = ReForm.Make(StateLenses);
 
 [@react.component]
 let make = () => {

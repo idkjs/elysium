@@ -3,9 +3,9 @@ module Styles = {
   let header = isHome => {
     let headerShadow =
       if (isHome) {
-        boxShadow(transparent);
+        boxShadow(none);
       } else {
-        boxShadow(~x=px(2), ~y=px(3), ~spread=px(-3), ~blur=px(10), rgba(0, 0, 0, 0.75));
+        boxShadow(Shadow.box(~x=px(2), ~y=px(3), ~spread=px(-3), ~blur=px(10), rgba(0, 0, 0, 0.75)));
       };
     style([
       display(`flex),
@@ -17,7 +17,7 @@ module Styles = {
       headerShadow,
       width(vw(100.)),
       padding4(~top=px(2), ~left=px(0), ~right=px(0), ~bottom=px(2)),
-      fontFamily(Theme.sansSerif),
+      fontFamily(`sansSerif),
     ]);
   };
   let masthead = isHome =>

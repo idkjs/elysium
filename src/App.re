@@ -1,7 +1,7 @@
 module Styles = {
   open Css;
   let projectsGrid = style([display(grid)]);
-  let app = style([display(`flex), flexDirection(column), alignItems(center), fontFamily(Theme.sansSerif)]);
+  let app = style([display(`flex), flexDirection(column), alignItems(center), fontFamily(`sansSerif)]);
 };
 
 open Types;

@@ -10,7 +10,7 @@ module Styles = {
       backgroundColor(white),
       borderRadius(px(10)),
       margin(px(20)),
-      boxShadow(rgba(0, 0, 0, 0.75), ~x=px(7), ~y=px(-1), ~blur=px(33), ~spread=px(-15)),
+      boxShadow(Shadow.box(rgba(0, 0, 0, 0.75), ~x=px(7), ~y=px(-1), ~blur=px(33), ~spread=px(-15)))
     ]);
   let icon = style([width(px(20)), padding(px(4))]);
   let name = style([color(hex(""))]);
